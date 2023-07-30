@@ -1,5 +1,5 @@
-import Image from "next/image";
-
-export default function Home() {
+function RootPage() {
   return <div>haha</div>;
 }
+
+export default RootPage;

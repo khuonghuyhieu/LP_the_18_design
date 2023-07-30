@@ -1,4 +1,6 @@
 import Assets from "./Assets";
-import Types from "./Types";
+import Routes from "./Routes";
 
-export { Assets, Types };
+export * from "./Types";
+
+export { Assets, Routes };

@@ -1,11 +1,13 @@
+"use client";
+
 import Footer from "./footer";
 import Header from "./header";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <div>Layout</div>
+      <div>{children}</div>
       <Footer />
     </>
   );

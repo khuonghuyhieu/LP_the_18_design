@@ -1,20 +1,6 @@
-import { Assets } from "@/constants";
+import { Assets, Menu } from "@/constants";
 import Image from "next/image";
-
-const NavItem = (items) => {
-  const { index, length, nameNav } = items;
-
-  const navStart = index === 0;
-  const navEnd = index === length;
-
-  return (
-    <>
-      {navStart && <div>start</div>}
-      <div>{nameNav}</div>
-      {navEnd && <div>end</div>}
-    </>
-  );
-};
+import NavHeader from "./Nav";
 
 export default function Header() {
   return (
@@ -34,7 +20,7 @@ export default function Header() {
           height={44}
           alt="Picture of the author"
         />
-        <nav className="bg-black rounded-full border border-black">haha</nav>
+        <NavHeader />
         <button className="border border-black p-2.5 rounded-full bg-green">
           <Image
             src={Assets.COMMON.login}
