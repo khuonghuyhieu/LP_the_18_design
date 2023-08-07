@@ -13,7 +13,7 @@ export default function Header() {
           alt="Picture of the author"
         />
       </button>
-      <div className="flex justify-between">
+      <div className="lg:justify-between hidden lg:flex">
         <Image
           src={Assets.COMMON.logo}
           width={44}
