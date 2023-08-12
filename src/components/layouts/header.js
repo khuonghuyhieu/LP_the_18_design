@@ -1,6 +1,7 @@
-import { Assets, Menu } from "@/constants";
+import { Assets, Menu, Routes } from "@/constants";
 import Image from "next/image";
 import NavHeader from "./Nav";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -14,12 +15,14 @@ export default function Header() {
         />
       </button>
       <div className="lg:justify-between hidden lg:flex">
-        <Image
-          src={Assets.COMMON.logo}
-          width={44}
-          height={44}
-          alt="Picture of the author"
-        />
+        <Link href={Routes.COURSE}>
+          <Image
+            src={Assets.COMMON.logo}
+            width={44}
+            height={44}
+            alt="Picture of the author"
+          />
+        </Link>
         <NavHeader />
         <button className="border border-black p-2.5 rounded-full bg-green">
           <Image
