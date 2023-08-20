@@ -12,7 +12,7 @@ export const MenuFooter = {
     CHILDREN: {
       INFO: "Info course",
       PROGRAM: "Program",
-      TOOLS: "tools",
+      TOOLS: "Tools",
     },
   },
   SOCIAL: {
