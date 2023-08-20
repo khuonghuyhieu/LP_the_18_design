@@ -27,6 +27,10 @@ const GilroyFont = NextLocalFont({
       path: "../../assets/fonts/Gilroy-Light.otf",
       weight: "400",
     },
+    {
+      path: "../../assets/fonts/Gilroy-ExtraBold.otf",
+      weight: "700",
+    },
   ],
 });
 
